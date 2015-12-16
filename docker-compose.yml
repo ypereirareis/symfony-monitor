@@ -1,0 +1,10 @@
+elk:
+  image: ypereirareis/elk
+  ports:
+    - 8200:9200
+    - 4601:5601
+
+forwarder:
+  image: ypereirareis/logstash-forwarder
+  links:
+    - elk
