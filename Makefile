@@ -1,4 +1,4 @@
-.PHONY: remove start stop state bash logs
+.PHONY: remove start stop state bash logs tests
 
 cmd=docker-compose
 step=----------------
