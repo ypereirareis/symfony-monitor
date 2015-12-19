@@ -9,4 +9,4 @@ elk:
 forwarder:
   image: ypereirareis/logstash-forwarder
   links:
-    - elk
+    - elk:elk

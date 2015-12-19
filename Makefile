@@ -1,7 +1,14 @@
 .PHONY: remove start stop state bash logs tests
 
-cmd=docker-compose
+
 step=----------------
+composeFile=tests/docker-compose-$(START_ENV).yml
+
+ifndef START_ENV
+    composeFile=docker-compose.yml
+endif
+
+cmd=docker-compose -f $(composeFile)
 
 remove: stop
 	@echo "$(step) Removing Monitor $(step)"

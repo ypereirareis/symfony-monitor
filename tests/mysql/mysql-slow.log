@@ -1,0 +1,15 @@
+# Time: 151219  8:52:21
+# User@Host: root[root] @  [172.17.0.5]
+# Query_time: 0.380515  Lock_time: 0.000159 Rows_sent: 5  Rows_examined: 328514
+SET timestamp=1450515141;
+SELECT count(*) FROM games;
+# Time: 151219  8:52:21
+# User@Host: root[root] @  [172.17.0.6]
+# Query_time: 0.380515  Lock_time: 0.000159 Rows_sent: 27  Rows_examined: 32857
+SET timestamp=1450515141;
+SELECT count(*) FROM events;
+# Time: 151219  8:52:21
+# User@Host: root[root] @  [172.17.0.7]
+# Query_time: 0.380515  Lock_time: 0.000159 Rows_sent: 50  Rows_examined: 142514
+SET timestamp=1450515141;
+SELECT count(*) FROM players;
